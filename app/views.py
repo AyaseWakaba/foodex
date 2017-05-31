@@ -13,7 +13,7 @@ def index() -> 'html':
        
 def log_request(req: 'flask_request', res: str) -> None:
     """Log details of the web request and the results."""
-    with open('vsearch.log', 'a') as log:
+    with open('houtai.log', 'a') as log:
         print(req.form, req.remote_addr, req.user_agent, res, file=log, sep='|')
         
 @app.route('/results',methods = ['POST'])
@@ -22,22 +22,23 @@ def results() -> 'html' :
     y1 = ['白粥','鸡蛋','c','d','e','f']
     y2 = ['米线','','e','r','t','y'] 
     y3 = ['白饭','2','3','4','5','6']
-    if 'bf' in x:
+    if '早餐' in x:
      y = sample(y1,3),'放弃吧已经是中午了'
-    elif 'lc' in x:
+    elif '午餐' in x:
      y = sample(y2,3),'这算是早餐了还是两个鸡蛋就算了吧'
     else: y = sample(y3,3),'少吃点吧万一有人叫你去宵夜呢'
     title = '已预约成功'
+    
     log_request(request, results)
     return render_template('results.html',
                            the_x=x,
                            the_y=y)
 
-@app.route('/viewlog')
+@app.route('/houtai')
 def view_the_log() -> 'html':
     """Display the contents of the log file as a HTML table."""
     contents = []
-    with open('vsearch.log') as log:
+    with open('houtai.log') as log:
         for line in log:
             contents.append([])
             for item in line.split('|'):
