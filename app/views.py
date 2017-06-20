@@ -2,7 +2,7 @@ from flask import render_template,flash,redirect, Flask, request, escape
 from app import app
 from random import sample
 
-fqfwqfwfwq
+
 @app.route('/')
 def index() -> 'html':
     return render_template('index.html', the_title = "选择困难症患者饭点助选器")
