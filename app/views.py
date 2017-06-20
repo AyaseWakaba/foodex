@@ -1,7 +1,47 @@
 
 # coding: utf-8
 
+# In[1]:# In[1]:
+from flask import render_template,flash,redirect, Flask, request, escape
+from app import app
+from random import sample
 # In[1]:
+from flask import render_template,flash,redirect, Flask, request, escape
+from app import app
+from random import sample
+# In[1]:
+from flask import render_template,flash,redirect, Flask, request, escape
+from app import app
+from random import sample
+# In[1]:
+from flask import render_template,flash,redirect, Flask, request, escape
+from app import app
+from random import sample
+# In[1]:
+from flask import render_template,flash,redirect, Flask, request, escape
+from app import app
+from random import sample
+# In[1]:
+from flask import render_template,flash,redirect, Flask, request, escape
+from app import app
+from random import sample
+# In[1]:
+from flask import render_template,flash,redirect, Flask, request, escape
+from app import app
+from random import sample
+# In[1]:
+from flask import render_template,flash,redirect, Flask, request, escape
+from app import app
+from random import sample
+# In[1]:
+from flask import render_template,flash,redirect, Flask, request, escape
+from app import app
+from random import sample
+# In[1]:
+from flask import render_template,flash,redirect, Flask, request, escape
+from app import app
+from random import sample
+
 from flask import render_template,flash,redirect, Flask, request, escape
 from app import app
 from random import sample
